@@ -77,3 +77,7 @@
   .outlet-l{padding-left:44px}.pipe--foot{width:36px}
   .out-facts{grid-template-columns:1fr}
 }
+
+/* device QA: 44px tap targets on phones */
+.mark{display:flex;align-items:center;min-height:44px}
+.out-num{display:inline-flex;align-items:center;min-height:44px}

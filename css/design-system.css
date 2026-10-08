@@ -34,3 +34,5 @@ a{color:inherit}
 .skip:focus{left:8px}
 .ph{display:inline-block;font:700 .66rem/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;background:#ffd84a;color:#111;padding:4px 6px;border-radius:2px;vertical-align:middle;margin-right:4px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* device QA: placeholder tags readable on phones */
+.ph{font-size:.75rem}

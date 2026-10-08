@@ -169,3 +169,4 @@ legend{font-weight:700;margin-bottom:12px}
   .ab-facts dl div{grid-template-columns:1fr;gap:2px}
   .pipe--head{display:none}
 }
+.card .phone{display:flex;width:fit-content;align-items:center;min-height:44px}
