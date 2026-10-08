@@ -1,0 +1,36 @@
+/* Absolute Septic concept: tokens. Green and black from the logo and truck wrap, clay from the red Johnston County dirt in their job photos. */
+:root{
+  --tank:#0e100d;      /* logo black: hero, footer, dark bands */
+  --slab:#1a1d18;      /* raised dark panels */
+  --logo:#2cbf10;      /* logo green: buttons (black text), pipe, marks on dark */
+  --hose:#276b17;      /* hose green: green text on light, 5.6:1 on sand */
+  --clay:#a8471f;      /* NC red clay: accent panels and signal */
+  --sand:#f3efe6;      /* page */
+  --gravel:#e1dbcf;    /* panels */
+  --ink:#1d201b;       /* text */
+  --mute:#585c55;      /* muted text, 6.3:1 on sand */
+  --f-display:"Big Shoulders Display","Big Shoulders",Impact,"Arial Narrow",sans-serif;
+  --f-body:"Work Sans",system-ui,sans-serif;
+  --flow:cubic-bezier(.16,1,.3,1);
+  --wrap:1220px;--gut:clamp(20px,4vw,44px);--r:4px;
+  --s4:clamp(2.2rem,4.6vw,3.6rem);--s5:clamp(2.8rem,6.4vw,5.4rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 1.125rem/1.62 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;line-height:.95;letter-spacing:.005em;text-transform:uppercase;margin:0}
+h1 em,h2 em{font-style:normal;color:var(--logo)}
+p{margin:0 0 1em;max-width:66ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--logo);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 18px;font:600 .78rem/1.3 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.kicker--green{color:var(--logo)}
+/* elbow: the pipe joint, used as the kicker mark */
+.elbow{width:16px;height:16px;flex:none;border-left:5px solid var(--logo);border-bottom:5px solid var(--logo);border-bottom-left-radius:10px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--logo);color:var(--tank);padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+.ph{display:inline-block;font:700 .66rem/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;background:#ffd84a;color:#111;padding:4px 6px;border-radius:2px;vertical-align:middle;margin-right:4px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
