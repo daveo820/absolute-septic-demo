@@ -1,6 +1,6 @@
 # Static page builder for the Absolute Septic concept. Run: python3 build.py
 import json
-BASE = 'https://daveo820.github.io/absolute-septic-demo/'  # temporary GitHub Pages link; swap for Vercel later
+BASE = 'https://absolute-septic-demo.vercel.app/'  # Vercel production URL
 TEL, TEL_H = '+19196496044', '(919) 649&#8209;6044'
 TEL2, TEL2_H = '+19198733925', '(919) 873&#8209;3925'
 HA = 'https://www.homeadvisor.com/rated.AbsoluteSeptic.118185327.html'
